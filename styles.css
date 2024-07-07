@@ -1,0 +1,528 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Garantir que não haja overflow horizontal */
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Estilos gerais */
+.caixa-principal {
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat; 
+    background-size: 40%;
+    background: linear-gradient(to right, #000000, #0a0159);
+    background-position: 75%; 
+}
+
+.caixa-principal img {
+    margin-left: 50%;
+    margin-top: 8%;
+    animation: float 2s ease-in-out infinite;
+    height: 650px;
+    width: 100%; /* Ajuste para responsividade */
+    max-width: 750px;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 30px;
+}
+
+.portifolio {
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.portifolio span {
+    color: #4D4DFF;
+}
+
+li {
+    color: white;
+    list-style: none;
+    display: inline-block;
+    font-size: 25px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+li:hover {
+    color: #0802bf;
+    transition: 0.5s;
+}
+
+.link-menu {
+    text-decoration: none;
+    color: white;
+}
+
+.link-menu:hover {
+    color: #0802bf;
+    transition: 0.5s;
+}
+
+.meu-nome {
+    position: absolute;
+    top: 50%;
+    left: 7%;
+}
+
+h1 {
+    color: white;
+    font-size: 75px;
+}
+
+h1 span {
+    color: #4D4DFF;
+}
+
+.meu-nome h3 {
+    color: white;
+    font-size: 25px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    padding: 60px 15%;
+    background: linear-gradient(to right, #000000, #0a0159);
+}
+
+section p {
+    text-align: justify;
+    letter-spacing: 0.5px;
+}
+
+section a {
+    background-color: #0802bf;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+section a:hover {
+    background-color: black;
+    border: 2px solid #0802bf;
+    transition: 0.5s;
+}
+
+section img {
+    height: 450px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-right: 30px;
+    width: 100%; /* Ajuste para responsividade */
+    max-width: 450px;
+}
+
+.image-container {
+    margin-left: 20%;
+}
+
+.tech-icon {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    margin-bottom: 50px;
+    background-color: white;
+    animation: pulse 2s linear infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+}
+
+section h2 {
+    color: white;
+    font-size: 75px;
+}
+
+section div p {
+    color: white;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+section div button {
+    color: white;
+    background: #0802bf;
+    height: 50px;
+    width: 180px;
+    font-size: 18px;
+    border: none;
+    border-radius: 26px;
+}
+
+section div button:hover {
+    background-color: black;
+    border: 2px solid #0802bf;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.projetos {
+    background: linear-gradient(to right, #000000, #0a0159);
+    padding: 50px 0 100px;
+}
+
+.projetos h2 {
+    color: white;
+    font-size: 75px;
+    text-align: center;
+}
+
+.card {
+    padding: 20px;
+    max-width: 600px;
+    word-wrap: break-word;
+    background: #1f0150;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card img {
+    height: 250px;
+    width: 100%; /* Ajuste para responsividade */
+    max-height: 250px;
+    position: sticky;
+}
+
+.card h5 {
+    color: white;
+    font-size: 26px;
+    margin-top: 8px;
+}
+
+.card p {
+    color: white;
+    margin-top: 30px;
+    font-size: 18px;
+    letter-spacing: 0.3px;
+    text-align: justify;
+}
+
+.card-projetos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+footer {
+    background: linear-gradient(to right, #000000, #0a0159);
+    padding: 100px 0 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h5 {
+    color: white;
+    font-size: 30px;
+    margin-top: 200px;
+}
+
+footer p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 30px;
+    margin-top: 14px;
+}
+
+.social {
+    display: flex;
+    gap: 20px;
+}
+
+.social img {
+    height: 24px;
+    border-radius: 50%;
+}
+
+.social a {
+    background-color: #0802bf;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.social a:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+
+/* Para telas pequenas */
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    .portifolio {
+        font-size: 45px;
+    }
+
+    .card img {
+        height: 200px;
+    }
+
+    .caixa-principal img {
+        position: absolute; /* Permite a definição de posições específicas */
+        top: -30px; /* Ajuste conforme necessário */
+        left: -30px; /* Ajuste conforme necessário */
+        height: 30px; /* Mantém a proporção original da imagem */
+        width:  10px; /* Mantém a proporção original da imagem */
+    }
+
+}
+
+/* Para tablets em modo retrato e celulares grandes */
+@media (max-width: 940px) {
+    .meu-nome {
+        top: 25%;
+        left: 7%;
+    }
+
+    .caixa-principal {
+        background-position: 100%;
+    }
+
+    .caixa-principal img{
+        height: 650px;
+        width: 570px;
+        margin-left: 150px;
+        margin-top: 430px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    #sobre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #sobre h2 {
+        font-size: 30px;
+    }
+
+    #sobre p {
+        font-size: 18px;
+    }
+
+    section img {
+        height: 300px;
+        width: 90%;
+        margin-left: 25px;
+        max-width: 940px;
+        margin-bottom: 20px;
+        border-radius: 80%;
+    }
+
+    .card-projetos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        margin: 8px;
+    }
+
+    .card img {
+        max-height: 550px;
+    }
+
+    .image-container {
+        margin-left: 5%;
+    }
+
+    .tech-icon {
+        width: 50px;
+        height: 50px;
+        margin: 15px;
+        vertical-align: top;
+        margin-bottom: 60px;
+        background-color: white;
+    }
+}
+
+/* Para celulares e tablets pequenos */
+@media (max-width: 608px) {
+    .portifolio {
+        font-size: 30px;
+    }
+
+    .meu-nome h1 {
+        font-size: 30px;
+    }
+
+    .meu-nome h3 {
+        font-size: 18px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    .caixa-principal {
+        width: auto;
+    }
+
+    .caixa-principal img {
+        height: 350px;
+        width: 420px;
+        max-width: 350px;
+        margin-left: 50px;
+        margin-top: 300px;
+    }
+
+    li {
+        font-size: 10px;
+    }
+
+    .image-container {
+        margin-left: 5%;
+    }
+
+    .tech-icon {
+        width: 50px;
+        height: 50px;
+        margin: 15px;
+        vertical-align: top;
+        margin-bottom: 60px;
+        background-color: white;
+    }
+
+    li{
+        margin-left: 10px;
+    }
+
+    .image-container {
+        margin-left: 10px;
+    }
+    
+    .tech-icon {
+        width: 50px;
+        height: 50px;
+        margin: 6px;
+        margin-bottom: 50px;
+        background-color: white;
+        animation: pulse 2s linear infinite;
+    }
+}
+
+/* Dispositivos grandes (desktops pequenos e notebooks, 1024px a 1440px) */
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    .container {
+        width: 80%;
+        padding: 20px;
+    }
+    .header, .content, .footer {
+        padding: 20px;
+        margin: 10px 0;
+    }
+
+    .caixa-principal img {
+        margin-left: 670px;
+        margin-top: 150px;
+        height: 400px;
+        width: 500px;
+    }
+
+    .card {
+        padding: 20px;
+        max-width: 372px;
+        word-wrap: break-word;
+        background: #1f0150;
+        border-radius: 15px;
+    }
+
+    .card img {
+        height: 180px;
+        width: 340px; /* Ajuste para responsividade */
+        max-height: 250px;
+        position: sticky;
+        align-items: center;
+    }
+    
+}
+
+/* Dispositivos extra grandes (desktops grandes e notebooks grandes, mais de 1440px) */
+@media only screen and (min-width: 1441px) {
+    .container {
+        width: 75%;
+        padding: 25px;
+    }
+    .header, .content, .footer {
+        padding: 25px;
+        margin: 15px 0;
+    }
+
+    .caixa-principal img {
+        margin-top: 100px;
+        margin-left: 850px;
+    }
+}
+
+/* Dispositivos extra grandes (desktops grandes e notebooks grandes, mais de 1440px) */
+@media only screen and (min-width: 1920px) {
+    .container {
+        width: 75%;
+        padding: 25px;
+    }
+    .header, .content, .footer {
+        padding: 25px;
+        margin: 15px 0;
+    }
+
+    .caixa-principal img {
+        margin-top: 100px;
+        margin-left: 800px;
+    }
+}
+
+
